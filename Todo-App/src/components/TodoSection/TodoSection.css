@@ -20,6 +20,8 @@
 .form {
   margin-top: 2rem;
   display: flex;
+  flex-direction: column;
+  gap: 5px;
   width: 50%;
 }
 
@@ -83,6 +85,16 @@
   display: flex;
   flex-direction: column;
   gap: 10px;
+}
+
+.input-wrapper {
+  display: flex;
+}
+
+.todo-error {
+  display: block;
+  color: rgb(255, 60, 60);
+  align-self: flex-start;
 }
 
 .text--primary {

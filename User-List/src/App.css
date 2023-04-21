@@ -1,0 +1,38 @@
+#root,
+:root {
+  max-width: 1000px;
+  background-color: #3b3b3b;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: center;
+}
+
+:root {
+  margin: 40px auto;
+}
+
+.title {
+  margin-bottom: 1rem;
+  font-weight: 600;
+  color: #b7b7b7;
+}
+
+.text {
+  color: #b7b7b7;
+}
+
+.table--wrapper {
+  width: 90%;
+}
+
+.sort--wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.read-the-docs {
+  color: #888;
+}

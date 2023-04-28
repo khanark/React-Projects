@@ -1,10 +1,8 @@
 import "./App.css";
-import "bootstrap/dist/css/bootstrap.min.css";
 
 import { useEffect, useState } from "react";
 
-import Button from "react-bootstrap/Button";
-import CountrySearch from "./components/CountrySearch/CountrySearch";
+import Spinner from "./components/Spinner/Spinner";
 import { User } from "./vite-env";
 import UserList from "./components/UserList/UserList";
 import { getUsers } from "./services/users";
@@ -30,24 +28,21 @@ function App() {
   }, [page]);
 
   return (
-    <>
+    <div className="user-listing">
       <h1 className="title">Users Infinite Scroll & Pagination App</h1>
-      <p className="text">Sort By</p>
-      <div className="sort--wrapper">
-        <CountrySearch />
-      </div>
-      {users.length > 0 && (
-        <div className="table--wrapper">
-          <UserList users={users} />
-        </div>
-      )}
-      {loading && <h3>Loading...</h3>}
+      <p className="desc">
+        This app is made to showcase simple pagination upon user action.
+        Fetching is done whenever user clicks <span>Show More</span> button.
+      </p>
+      {!users.length && <Spinner />}
+      {users.length > 0 && <UserList users={users} />}
+      {loading && users.length > 0 && <Spinner />}
       {!loading && (
-        <Button variant="outline-secondary" onClick={onShowMoreClick}>
-          Show more...
-        </Button>
+        <button className="btn" onClick={onShowMoreClick}>
+          Show More...
+        </button>
       )}
-    </>
+    </div>
   );
 }
 

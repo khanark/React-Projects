@@ -1,7 +1,11 @@
-.rounded {
-  border-radius: 10px;
-}
-
-.centered {
-  text-align: center;
+.user-list {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  gap: 1.2rem;
+  list-style: none;
+  max-width: 96rem;
+  background-color: #9dc7ce;
+  padding: 1.6rem;
+  border-radius: 8px;
 }

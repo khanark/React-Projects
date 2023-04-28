@@ -47,36 +47,49 @@ const TodoSection = () => {
   const onTodoClear = () => dispatch(clearTodos());
 
   return (
-    <section className="todo__section" id="todo-section">
-      <h3> Add your new task! </h3>
-      <form className="form" onSubmit={onTodoSubmit}>
-        <div className="input-wrapper">
+    <section className="todo-section">
+      <div className="todo">
+        <h2 className="todo-title">Add your new task!</h2>
+        {!todos.length && (
+          <p className="no-tasks">No tasks yet, hurry up & add one!</p>
+        )}
+        {todos.length > 0 && (
+          <ul className="todo-list">
+            {todos.map((todo: any, i: number) => (
+              <TodoComponent key={i} {...todo} />
+            ))}
+          </ul>
+        )}
+        <form className="todo-form" onSubmit={onTodoSubmit}>
           <input
             type="text"
-            name="todo"
-            placeholder="Add Todo..."
             value={todo.value}
             onChange={onTodoChange}
+            className="todo-text"
+            placeholder="New task..."
           />
-          <button className="add-btn">Add</button>
-        </div>
-        {error && <p className="todo-error">{error}</p>}
-      </form>
-      <ul className="todos">
-        {todos.map((todo) => (
-          <TodoComponent key={todo.id} {...todo} />
-        ))}
-      </ul>
-      {!todos.length && (
-        <p className="text--primary">
-          There are no tasks yet. Be the first and add one!
-        </p>
-      )}
-      {todos.length > 0 && (
-        <button type="button" className="clear-btn" onClick={onTodoClear}>
-          Clear
+          <button type="submit" className="btn-add">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              className="todo-icon"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M12 4.5v15m7.5-7.5h-15"
+              />
+            </svg>
+          </button>
+        </form>
+        {todo.error && <p className="todo-error">{todo.error}</p>}
+        <button className="btn-clear" onClick={onTodoClear}>
+          Clear Tasks
         </button>
-      )}
+      </div>
     </section>
   );
 };

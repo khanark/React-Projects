@@ -5,19 +5,18 @@ import headerImage from "../../assets/svg-header.svg";
 
 const HeaderSection = () => {
   return (
-    <section className="header__section">
-      <h1 className="title">TaskMate</h1>
-      <div className="section__header">
-        <img src={headerImage} alt="" className="section-header__image" />
-        <div className="section__header-right">
+    <section className="header-section">
+      <div className="header">
+        <img src={headerImage} alt="" className="header-img" />
+        <div className="header-right--box">
+          <h1 className="title">
+            Task management app that helps you stay organized.
+          </h1>
           <p className="desc">
-            TaskMate is an intuitive and user-friendly task management app that
-            helps you stay organized and on top of your daily tasks.
-          </p>
-          <p className="desc">
-            You can choose from different themes and colors to personalize the
-            app, and you can even set up recurring tasks for things you need to
-            do on a regular basis.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil
+            cupiditate, quae, ratione ab maxime pariatur suscipit quam
+            praesentium exercitationem commodi animi architecto voluptas harum
+            fugiat distinctio, mollitia eligendi accusamus consequuntur.
           </p>
           <Link
             to="todo-section"

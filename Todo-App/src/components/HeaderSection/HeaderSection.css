@@ -1,101 +1,69 @@
-.header__section {
-  width: 80%;
-  height: 100vh;
+.header-section {
+  background-color: #151532;
+  min-height: 100vh;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
   align-items: center;
+  padding: 3.2rem 0;
+}
+.header {
+  max-width: 120rem;
   margin: 0 auto;
-}
-
-.section__header {
+  padding: 1.6rem;
   display: flex;
+  gap: 2.4rem;
+  align-items: center;
 }
-
-.section-header__image {
-  width: 50%;
-  height: auto;
+.header-img {
+  max-width: 50%;
 }
-
-.section__header-right {
-  align-self: center;
-}
-
 .title {
-  margin-top: 1rem;
-  text-align: center;
-  font-size: 32px;
-  font-weight: 600;
-  letter-spacing: 2px;
-  color: #e6e7e8;
+  font-size: 4.8rem;
+  letter-spacing: -1px;
+  line-height: 1.1;
+  font-weight: 700;
+  margin-bottom: 3.2rem;
 }
-
 .desc {
-  padding: 0 2rem;
-  margin-top: 2rem;
-  font-size: 24px;
-  color: #e6e7e8;
+  font-size: 1.8rem;
+  line-height: 1.6;
+  margin-bottom: 2.4rem;
 }
 
 .btn {
   display: inline-block;
-  margin-top: 4rem;
-  margin-left: 4rem;
-  padding: 1rem 2rem;
-  color: white;
-  background-color: #6b69fa;
-  font-size: 18px;
-  border: none;
-  border-radius: 40px;
-  font-weight: 400;
-  cursor: pointer;
-  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
-  transition: all 0.2s;
-}
-
-.btn-primary:hover {
+  padding: 2.4rem 3.2rem;
   background-color: #5653f6;
+  font-size: 1.8rem;
+  color: #fff;
+  font-weight: 500;
+  border-radius: 0.8rem;
+  cursor: pointer;
+  transition: all 0.3s;
 }
 
-@media screen and(max-width: 1114px) {
-  .desc {
-    font-size: 14px;
-  }
-
-  .section-header__image {
-    display: none;
-  }
+.btn:hover {
+  background-color: #3c3a9e;
 }
 
-@media screen and (max-width: 1432px) {
-  .desc {
-    font-size: 18px;
+@media screen and (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    gap: 4.8rem;
   }
 
   .btn {
-    margin-top: 2rem;
+    justify-self: center;
   }
-}
 
-@media screen and (max-width: 600px) {
-  .section__header {
-    flex-direction: column;
-    align-items: center;
+  .header-img {
+    max-width: 100%;
   }
 
   .title {
-    margin: 50px auto;
+    font-size: 3.6rem;
   }
 
-  .section__header-right {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .btn-primary {
-    margin: 0;
-    margin-top: 2rem;
+  .desc {
+    font-size: 1.6rem;
   }
 }

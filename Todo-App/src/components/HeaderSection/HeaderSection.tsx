@@ -7,16 +7,17 @@ const HeaderSection = () => {
   return (
     <section className="header-section">
       <div className="header">
-        <img src={headerImage} alt="" className="header-img" />
+        <div className="img-wrapper">
+          <img src={headerImage} alt="" className="header-img" />
+        </div>
         <div className="header-right--box">
           <h1 className="title">
             Task management app that helps you stay organized.
           </h1>
           <p className="desc">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil
-            cupiditate, quae, ratione ab maxime pariatur suscipit quam
-            praesentium exercitationem commodi animi architecto voluptas harum
-            fugiat distinctio, mollitia eligendi accusamus consequuntur.
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Beatae
+            corporis sapiente alias tempora facilis voluptatem iure ipsam
+            doloremque explicabo ut.
           </p>
           <Link
             to="todo-section"

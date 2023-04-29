@@ -9,24 +9,26 @@
   max-width: 120rem;
   margin: 0 auto;
   padding: 1.6rem;
-  display: flex;
-  gap: 2.4rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+
+  column-gap: 9.6rem;
   align-items: center;
 }
 .header-img {
-  max-width: 50%;
+  max-width: 100%;
 }
 .title {
-  font-size: 4.8rem;
-  letter-spacing: -1px;
-  line-height: 1.1;
+  font-size: 5.2rem;
+  letter-spacing: -0.5px;
+  line-height: 1.05;
   font-weight: 700;
   margin-bottom: 3.2rem;
 }
 .desc {
   font-size: 1.8rem;
   line-height: 1.6;
-  margin-bottom: 2.4rem;
+  margin-bottom: 4.8rem;
 }
 
 .btn {
@@ -52,8 +54,13 @@
 
 @media screen and (max-width: 768px) {
   .header {
-    flex-direction: column;
-    gap: 4.8rem;
+    grid-template-columns: none;
+    text-align: center;
+    gap: 3.2rem;
+  }
+
+  .title {
+    font-size: 4.8rem;
   }
 
   .btn {
@@ -62,13 +69,5 @@
 
   .header-img {
     max-width: 100%;
-  }
-
-  .title {
-    font-size: 3.6rem;
-  }
-
-  .desc {
-    font-size: 1.6rem;
   }
 }

@@ -7,16 +7,29 @@
   grid-template-columns: 1fr auto auto;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
+
 .todo-item--text {
   font-size: 1.8rem;
   font-weight: 600;
   text-decoration: none;
 }
+
 .todo-right-box {
   display: flex;
   gap: 1.6rem;
 }
-.todo-right--btn {
+
+.todo-right--btn:hover {
+  background-color: #5653f6;
+}
+
+.todo-icon {
+  width: 24px;
+  height: 24px;
+  stroke: #151532;
+}
+
+.btn-todo {
   width: 3.2rem;
   height: 3.2rem;
   border: none;
@@ -24,16 +37,18 @@
   cursor: pointer;
   transition: all 0.3s;
 }
-.todo-right--btn:hover {
+
+.btn-todo:hover {
   background-color: #5653f6;
 }
-.todo-right--btn:hover > svg {
+
+.btn-todo:hover .todo-icon {
   stroke: #fff;
 }
-.todo-icon {
-  width: 24px;
-  height: 24px;
-  stroke: #151532 !important;
+
+.completed {
+  text-decoration: line-through;
+  color: #5653f6;
 }
 
 .scale-in-center {

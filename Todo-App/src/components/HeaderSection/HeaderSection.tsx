@@ -24,7 +24,7 @@ const HeaderSection = () => {
             smooth={true}
             duration={500}
           >
-            Let's get you started!
+            Let's get you started
           </Link>
         </div>
       </div>

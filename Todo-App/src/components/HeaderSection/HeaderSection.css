@@ -41,6 +41,11 @@
   transition: all 0.3s;
 }
 
+.btn-icon {
+  width: 24px;
+  height: 24px;
+}
+
 .btn:hover {
   background-color: #3c3a9e;
 }

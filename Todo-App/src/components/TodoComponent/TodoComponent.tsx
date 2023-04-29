@@ -16,15 +16,14 @@ const TodoComponent = ({ id, title, completed }: Todo) => {
   };
 
   const onCheckCompleted = () => {
-    console.log("button is pressed");
     dispatch(checkCompleted(id));
   };
 
   return (
-    <li className="todo-item scale-in-center">
+    <li className={`todo-item scale-in-center ${completed ? "completed" : ""}`}>
       <p className="todo-item--text">{title}</p>
       <div className="todo-right-box">
-        <button className="todo-right--btn" onClick={onCheckCompleted}>
+        <button className="btn-todo" onClick={onCheckCompleted}>
           <svg
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
@@ -40,7 +39,7 @@ const TodoComponent = ({ id, title, completed }: Todo) => {
             />
           </svg>
         </button>
-        <button className="todo-right--btn" onClick={onTodoDelete}>
+        <button className="btn-todo" onClick={onTodoDelete}>
           <svg
             xmlns="http://www.w3.org/2000/svg"
             fill="none"

@@ -6,7 +6,7 @@ This repository contains a collection of mini projects developed using the React
 
 | Project Name | Code                                                                          | Website                                                  |
 | ------------ | ----------------------------------------------------------------------------- | -------------------------------------------------------- |
-| Todo App     | [Browse Code](https://github.com/khanark/React-Projects/tree/main/Todo%20App) | [Visit The App](https://yourusername.github.io/project1) |
+| Todo App     | [Browse Code](https://github.com/khanark/React-Projects/tree/main/Todo-App) | [Visit The App](https://todo-app-redux-typescript.netlify.app/) |
 | User List    | [Browse Code](https://github.com/khanark/React-Projects/tree/main/User-List)  | [Visit The App](https://user-listing-app.netlify.app/) |
 | Fitness Landing Page    | [Browse Code](https://github.com/khanark/React-Projects/tree/main/responsive-fitness-landing)  | [Visit The App](https://fitness-responsive.netlify.app/) |
 

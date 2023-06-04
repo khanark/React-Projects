@@ -8,6 +8,7 @@ This repository contains a collection of mini projects developed using the React
 | ------------ | ----------------------------------------------------------------------------- | -------------------------------------------------------- |
 | Todo App     | [Browse Code](https://github.com/khanark/React-Projects/tree/main/Todo%20App) | [Visit The App](https://yourusername.github.io/project1) |
 | User List    | [Browse Code](https://github.com/khanark/React-Projects/User-List)  | [Visit The App](https://user-listing-app.netlify.app/) |
+| Fitness Landing Page    | [Browse Code](https://github.com/khanark/React-Projects/tree/main/responsive-fitness-landing)  | [Visit The App](https://fitness-responsive.netlify.app/) |
 
 ## Project Descriptions
 
@@ -18,6 +19,10 @@ For this project I have used TypeScript and Redux to handle state changes.
 ### User List:
 
 User List Application with Infinite Scroll and Search Functionality.
+
+### Fitness Landing Page:
+
+Responsive fitness landing page built with Vite and TailwindCSS.
 
 ## Getting Started
 

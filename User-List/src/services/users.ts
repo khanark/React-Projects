@@ -1,4 +1,4 @@
-import { User } from "../vite-env";
+import {User} from "../vite-env";
 
 const getUsers = async (page: number, signal: AbortSignal): Promise<User[]> => {
   const res = await fetch(
@@ -6,8 +6,7 @@ const getUsers = async (page: number, signal: AbortSignal): Promise<User[]> => {
     { signal: signal }
   );
   const { results } = await res.json();
-  const users: User[] = results;
-  return users;
+  return results;
 };
 
 export { getUsers };
